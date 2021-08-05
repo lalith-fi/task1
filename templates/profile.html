@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {background-color: #000000;}
+        h1   {color: blue;}
+        p    {color: #7FFFD4;}
+        body {text-align: center;}
+        div  {text-align:left;}
+        a {color: #7FFFD4;height: 30px;width: 70px;}
+    </style>
+</head>
+<body>
+    <img src="{{user.profile_pic.url}}" style ="height:250px">
+    <div>
+    <p>Hi!!{{user.username}}</p>
+    <p><b>Ur Details!!</b></p>
+    <p>FirstName:{{user.first_name}}</p>
+    <p>LastName:{{user.last_name}}</p>
+    <p>UserName:{{user.username}}</p>
+    <p>Email:{{user.email}}</p>
+    <p>Address:{{user.Address}}</p>
+    <p>UserType:{{user.user_type}}</p>
+    <a href="{% url 'logout' %}">logout</a>
+    </div>
+    
+
+    <p></p>
+</body>
+</html>
