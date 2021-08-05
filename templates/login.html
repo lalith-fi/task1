@@ -16,10 +16,11 @@
     {% endif %}
     <form action="" method="POST">
         {% csrf_token %} 
+        <h2>Login Page</h2><br>
         <label for="">Username</label>
         <input type="text" name="username" ><br>
         <label for="">Password</label><br>
-        <input type="password" name="password">
+        <input type="password" name="password"><br>
         <input type="submit">
     </form>
     <p>New User?</p>
